@@ -24,16 +24,19 @@ var fonts = {
             style: 'tableBlack',
             table: {
                 widths: [200, 320],
-                heights:[50],
+                heights:[110],
                 body: [
                     [
                         {text:'Image Here',color:'white',fillColor:'black'}, 
                         
                         {
                             ul: [
-                            {text:'Name: Jane Doe',color:'white'},
-                            {text:'Student Id: 919000123',color:'white'},
-                            {text:'Email: s123456@nwmissouri.edu',color:'white'}
+                                {text:'.',color:'black',fontSize: 12},
+                            {text:[{text:'Name: ',color:'white',fontSize: 16,	bold: true},{text:'Jane Doe',color:'white',fontSize: 16,}]},
+                            {text:'.',color:'black',fontSize: 5},
+                            {text:[{text:'Student ID: ',color:'white',fontSize: 16,	bold: true},{text:'919000123',color:'white',fontSize: 16,}]},
+                            {text:'.',color:'black',fontSize: 5},
+                            {text:[{text:'Email: ',color:'white',fontSize: 16,	bold: true},{text:'s123456@nwmissouri.edu',color:'white',fontSize: 16,}]},
                                 ],
                                 fillColor:'black',
                                 
@@ -49,13 +52,15 @@ var fonts = {
         {
             style: 'tableBlack',
             table: {
-                widths: [30,490],
-                heights:[20],
+                widths: [528],
+                heights:[15,35,10],
                 body: [
+                    [{text:'.',color:'#d1d3d4',fillColor:'#d1d3d4'},],
                     [
-                        {text:'',fillColor:'grey'},
-                        {text:'MS Example Degree Approved Program Plan',fillColor:'grey'}, 
+                        
+                        {text:'MS Example Degree Approved Program Plan',fillColor:'#d1d3d4',fontSize: 20,alignment: 'center'}, 
                     ],
+                    [{text:'.',color:'white',fillColor:'white'},],
                     
                 ]
             },
@@ -75,13 +80,13 @@ var fonts = {
 		{
 		style: 'tableExample2',
 		table: {
-			widths: [200, 100, 200],
-			heights:[25],
+			widths: [240, 80, 180],
+			heights:[32],
 			body: [
                 [
-                    {text:'Course Title',alignment: 'center',color:'white',fillColor:'black',},
-                     {text:'Course #',alignment: 'center',fillOpacity:0.60,color:'white',fillColor:'black'},
-                      {text:'Semester-Block-Term',alignment: 'center',color:'white',fillColor:'black'}],
+                    {text:'Course Title',alignment: 'center',color:'white',fillColor:'black',bold: true},
+                     {text:'Course #',alignment: 'center',fillOpacity:0.60,color:'white',fillColor:'black',bold: true},
+                      {text:'Semester-Block-Term',alignment: 'center',color:'white',fillColor:'black',bold: true}],
             ],
             
 		},
@@ -90,31 +95,63 @@ var fonts = {
 	{
 		style: 'tableExample2',
 		table: {
-			widths: [200, 100, 200],
+            widths: [246, 80, 186],
+            heights:[24,24,24,24,24,24,24,24,24,24],
 			body: [
 				[
-					{text: 'Insert Course Title 1',fillColor:'#006747'},
-					{text: 'ABC 1111',fillOpacity:0.60,fillColor:'#006747'},
-					{text: 'Semester-1-2020',fillColor:'#006747'},
+					{text: 'Insert Course Title 1',color:'white',fillColor:'#007357',bold: true,height:22},
+					{text: 'ABC 1111',color:'white',fillOpacity:0.60,fillColor:'#007357',bold: true,height:22},
+					{text: 'Semester-1-2020',color:'white',fillColor:'#007357',},
 					],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
-				[
-					{text: 'Insert Course Title 1',fillColor:'#006747'},
-					{text: 'ABC 1111',fillOpacity:0.60,fillColor:'#006747'},
-					{text: 'Semester-1-2020',fillColor:'#006747'},
-					],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
-				[
-					{text: 'Insert Course Title 1',fillColor:'#006747'},
-					{text: 'ABC 1111',fillOpacity:0.60,fillColor:'#006747'},
-					{text: 'Semester-1-2020',fillColor:'#006747'},
-					],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
-				['Insert Course Title 1', 'ABC 1111', 'Semester-1-2020'],
+                    [
+                        {text: 'Insert Course Title 1',color:'black',fillColor:'#f1f2f2',bold: true},
+                        {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#f1f2f2',bold: true},
+                        {text: 'Semester-1-2020',color:'black',fillColor:'#f1f2f2',},
+                        ],
+                        [
+                            {text: 'Insert Course Title 1',color:'black',fillColor:'#d1d3d4',bold: true},
+                            {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#d1d3d4',bold: true},
+                            {text: 'Semester-1-2020',color:'black',fillColor:'#d1d3d4',},
+                            ],
+                            [
+                                {text: 'Insert Course Title 1',color:'white',fillColor:'#007357',bold: true},
+                                {text: 'ABC 1111',color:'white',fillOpacity:0.60,fillColor:'#007357',bold: true},
+                                {text: 'Semester-1-2020',color:'white',fillColor:'#007357',},
+                                ],
+                                [
+                                    {text: 'Insert Course Title 1',color:'black',fillColor:'#f1f2f2',bold: true},
+                                    {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#f1f2f2',bold: true},
+                                    {text: 'Semester-1-2020',color:'black',fillColor:'#f1f2f2',},
+                                    ],
+                                    [
+                                        {text: 'Insert Course Title 1',color:'black',fillColor:'#d1d3d4',bold: true},
+                                        {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#d1d3d4',bold: true},
+                                        {text: 'Semester-1-2020',color:'black',fillColor:'#d1d3d4',},
+                                        ],
+                                        [
+                                            {text: 'Insert Course Title 1',color:'white',fillColor:'#007357',bold: true},
+                                            {text: 'ABC 1111',color:'white',fillOpacity:0.60,fillColor:'#007357',bold: true},
+                                            {text: 'Semester-1-2020',color:'white',fillColor:'#007357'},
+                                            ],
+                                            [
+                                                {text: 'Insert Course Title 1',color:'black',fillColor:'#f1f2f2',bold: true},
+                                                {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#f1f2f2',bold: true},
+                                                {text: 'Semester-1-2020',color:'black',fillColor:'#f1f2f2'},
+                                                ],
+                                                [
+                                                    {text: 'Insert Course Title 1',color:'black',fillColor:'#d1d3d4',bold: true},
+                                                    {text: 'ABC 1111',color:'black',fillOpacity:0.60,fillColor:'#d1d3d4',bold: true},
+                                                    {text: 'Semester-1-2020',color:'black',fillColor:'#d1d3d4'},
+                                                    ],
+                                                    [
+                                                        {text: 'Insert Course Title 1',color:'white',fillColor:'#007357',bold: true,height:22},
+                                                        {text: 'ABC 1111',color:'white',fillOpacity:0.60,fillColor:'#007357',bold: true,height:22},
+                                                        {text: 'Semester-1-2020',color:'white',fillColor:'#007357',},
+                                                        ],
+                                                    
 			]
-		}
+        },
+        layout: 'noBorders'
     },
     {
         columns: [
@@ -132,7 +169,7 @@ var fonts = {
 					width: 250,
 					text: 'NW logo'
 				},
-				{
+				{ 
 					ul: [
 					' First time enrollment: your enrollment will be processed through the Registrar’s Office. You will receive notification after you have been enrolled. ',
 					' Continuing student enrollment: ',
@@ -147,26 +184,36 @@ var fonts = {
 		},
 		
 	{
-		style: 'tableExample3',
-			columns: [
+        style: 'tableExample3',
+        table:{
+            widths: [100, 100, 150,150],
+			body: [[
 				{
-					width: 100,
-					text: 'CatPaws'
+					
+                    text: 'CatPaws',
+                    color:'#007357'
 				},
 				{
-					width: 100,
-					text: 'Northwest360'
+					
+                    text: 'Northwest360',
+                    color:'#007357'
 				},
 				{
-					width: 100,
-					text: 'Online Programs Home Page'
+					
+                    text: 'Online Programs Home Page',
+                    color:'#007357'
 				},
 				{
-					width: 100,
-					text: 'Graduate Office:660-562-1144'
-				},
+					
+                    text: 'Graduate Office:660-562-1144',
+                    color:'#007357'
+				},]
 				
-			]
+            ],  
+        },
+        layout: 'noBorders',
+        fillColor:'#d1d3d4'
+        
 		},
       ],
       styles: {
@@ -197,7 +244,7 @@ var fonts = {
         },
         tableExample4: {
             
-            fontSize: 8,
+            fontSize: 10,
      
             
         },
